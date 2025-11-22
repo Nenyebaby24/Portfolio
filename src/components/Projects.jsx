@@ -1,0 +1,92 @@
+import React, { useState } from "react";
+
+import "./Projects.css";
+
+const Projects = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const data = [
+    { 
+      title: "Luchi Abacha Dashboard",
+      link: "https://luchi-special-abacha-dashboard.vercel.app/",
+      screenshot: "/assets/luchi-dashboard.jpg",
+      description: "A React admin dashboard designed for product management, sales tracking, and smooth analytics." 
+    },
+    { 
+      title: "Luchi Special Abacha Website",
+      link: "https://luchi-abacha-website.vercel.app/",
+      screenshot: "/assets/luchi-abacha.jpg",
+      description: "A modern, responsive website for a food brand showcasing products and customer engagement."  
+    },
+    { 
+      title: "Tobams Training Website",
+      link: "https://tobams-training-website-72ad.vercel.app/",
+      screenshot: "/assets/tobams.jpg",
+      description: "A corporate training website designed for service presentation and lead generation."  
+    },
+    { 
+      title: "Gemini Chatbot",
+      link: "https://chatbot-with-germini-api.vercel.app/",
+      screenshot: "/assets/geminichat.jpg",
+      description: "A custom-built chatbot interface integrated with the Gemini API."  
+    },
+    { 
+      title: "GlowOn Landing Page",
+      link: "https://grow-on-landing-page-7r5c.vercel.app/",
+      screenshot: "/assets/glowon.jpg",
+      description: "A sleek landing page with strong CTA flow and conversion-focused UI."  
+    },
+  ];
+
+  return (
+    <section id="projects" className="projects-section">
+      <h2>Projects</h2>
+
+      <div className="projects-grid">
+        {data.map((p, i) => (
+          <div key={i} className="project-card">
+            <img src={p.screenshot} alt={p.title} className="project-img" />
+            <h3>{p.title}</h3>
+            <button className="details-btn" onClick={() => setSelectedProject(p)}>
+              View Live
+            </button>
+          </div>
+        ))}
+      </div>
+
+      {/* MODAL */}
+      {selectedProject && (
+        <div className="modal-overlay" onClick={() => setSelectedProject(null)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <img 
+              src={selectedProject.screenshot} 
+              alt={selectedProject.title} 
+              className="modal-img" 
+            />
+            <h2>{selectedProject.title}</h2>
+            <p className="modal-desc">{selectedProject.description}</p>
+
+            <div className="modal-actions">
+              <a 
+                href={selectedProject.link}
+                target="_blank"
+                className="open-live"
+              >
+                Open Live Website
+              </a>
+
+              <button 
+                className="close-modal"
+                onClick={() => setSelectedProject(null)}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+    </section>
+  );
+};
+
+export default Projects;
