@@ -36,6 +36,15 @@ const Projects = () => {
       screenshot: "/assets/glowon.jpg",
       description: "A sleek landing page with strong CTA flow and conversion-focused UI."  
     },
+
+    {
+      title: "Kloudspot project",
+      link: "https://kloudspot-project-8vil.vercel.app/",
+      screenshot: "/assets/kloudspot.jpg",
+      description: "A Crowd Solutions Management App. The Crowd Management System aims to provide a unified interface for stakeholders to view live and historical crowd analytics. The designs represent the core user experience, including login, dashboard and crowd entries visibility."
+
+
+    },
   ];
 
   return (
