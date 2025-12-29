@@ -45,6 +45,23 @@ const Projects = () => {
 
 
     },
+     {
+      title: "Nado Ventures Ltd project",
+      link: "https://next-js-project-weld-iota.vercel.app/",
+      screenshot: "/assets/nado.jpg",
+      description: " entries visibility."
+
+
+    },
+    {
+    title: "Flowva Hub project",
+      link: "https://flowva-hub.vercel.app/",
+      screenshot: "/assets/flowva-hub.jpg",
+      description: "A centralized platform designed to help brands and digital products reach and engage with a highly active audience of tech-savvy users."
+    
+
+    },
+
   ];
 
   return (
