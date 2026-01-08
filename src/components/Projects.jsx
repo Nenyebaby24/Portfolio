@@ -61,6 +61,14 @@ const Projects = () => {
     
 
     },
+    {
+    title: "Appointment Booking App",
+      link: "https://appointment-booking-app-chl3.vercel.app/",
+      screenshot: "/assets/appointment.jpg",
+      description: "Full-stack Dental Booking System that allows patients to book appointments online, and it automatically generates new available time slots once existing ones are fully booked"
+    
+
+    },
 
   ];
 
