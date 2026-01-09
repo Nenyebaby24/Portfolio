@@ -49,7 +49,7 @@ const Projects = () => {
       title: "Nado Ventures Ltd project",
       link: "https://next-js-project-weld-iota.vercel.app/",
       screenshot: "/assets/nado.jpg",
-      description: " entries visibility."
+      description: "A landing page for an Edtech portal. Tools: Next.js, Tailwind CSS, Shadcn UI and Framer Motion"
 
 
     },
@@ -57,7 +57,7 @@ const Projects = () => {
     title: "Flowva Hub project",
       link: "https://flowva-hub.vercel.app/",
       screenshot: "/assets/flowva-hub.jpg",
-      description: "A centralized platform designed to help brands and digital products reach and engage with a highly active audience of tech-savvy users."
+      description: "A centralized platform designed to help brands and digital products reach and engage with a highly active audience of tech-savvy users. Tools: React, Tailwind, shadcn UI and Supabase(for Backend and Database)"
     
 
     },
@@ -65,7 +65,7 @@ const Projects = () => {
     title: "Appointment Booking App",
       link: "https://appointment-booking-app-chl3.vercel.app/",
       screenshot: "/assets/appointment.jpg",
-      description: "Full-stack Dental Booking System that allows patients to book appointments online, and it automatically generates new available time slots once existing ones are fully booked"
+      description: "Full-stack Dental Booking System that allows patients to book appointments online, and it automatically generates new available time slots once existing ones are fully booked.The designs represent the core user experience, including login,signup, dashboard. Tools: React, Tailwind,and Supabase(for Backend and Database)"
     
 
     },
