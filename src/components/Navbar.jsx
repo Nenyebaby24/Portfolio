@@ -14,7 +14,32 @@ const Navbar = () => {
         <li><a href="#home" onClick={() => setOpen(false)}>Home</a></li>
         <li><a href="#about" onClick={() => setOpen(false)}>About</a></li>
         <li><a href="#services" onClick={() => setOpen(false)}>Services</a></li>
-        <li><a href="#projects" onClick={() => setOpen(false)}>Projects</a></li>
+
+        {/* DROPDOWN */}
+        <li className="dropdown">
+          <span className="dropdown-title">Projects</span>
+
+          <ul className="dropdown-menu">
+            <li>
+              <a href="#projectsA" onClick={() => setOpen(false)}>
+                Projects A
+              </a>
+            </li>
+
+            <li>
+              <a href="#projectsB" onClick={() => setOpen(false)}>
+                Projects B
+              </a>
+            </li>
+
+            <li>
+              <a href="#projectsC" onClick={() => setOpen(false)}>
+                Projects C
+              </a>
+            </li>
+          </ul>
+        </li>
+
         <li><a href="#contact" onClick={() => setOpen(false)}>Contact</a></li>
 
         <div className="nav-icons-mobile">
