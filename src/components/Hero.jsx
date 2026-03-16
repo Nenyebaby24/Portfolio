@@ -8,7 +8,7 @@ const Hero = () => {
         <h1>Hello, I'm <span>Chinenye Udo</span></h1>
         <p>Frontend Developer, Sales & Marketing Specialist</p>
 
-        <a href="#projects" className="hero-btn">View My Projects</a>
+        <a href="#projectsA" className="hero-btn">View My Projects</a>
       </div>
 
       <div className="hero-image">
