@@ -22,7 +22,7 @@ const Projects = () => {
       title: "3D Environment",
       link: "https://3-d-environment.vercel.app/",
       screenshot: "/assets/3D-environment.png",
-      description: "A corporate training website designed for service presentation and lead generation."  
+      description: "I build a single-page React application demonstrating seamless state synchronization between a Three.js scene and a React HUD."  
     },
    
      {
